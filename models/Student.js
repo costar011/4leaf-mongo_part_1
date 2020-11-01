@@ -2,7 +2,7 @@ import monogoose from "mongoose";
 
 const Schema = monogoose.Schema;
 
-// {} <-- model를 정의하는 제이슨, {}
+// {} <-- model를 정의하는 제이슨
 const Student = new Schema(
   {
     name: {
