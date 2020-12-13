@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); // mongoose를 mongoose에 요청하여 넣는다.
 const dotenv = require("dotenv");
 
 const connect = () => {
@@ -12,7 +12,7 @@ const connect = () => {
       dbName: process.env.DB_NAME,
       useNewUrlParser: true,
       useCreateIndex: true,
-      // `` <-- 첫번째 파라미터 연결 주소
+      // `` <-- 첫번째 파라미터 연결 주소 , ${process.env.DB} <-- dotenv 에 있는 DB변수
     },
     (error) => {
       if (error) {
